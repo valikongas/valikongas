@@ -1,0 +1,14 @@
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\bin\Debug\net8.0\Pirma paskaita.exe
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\bin\Debug\net8.0\Pirma paskaita.deps.json
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\bin\Debug\net8.0\Pirma paskaita.runtimeconfig.json
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\bin\Debug\net8.0\Pirma paskaita.dll
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\bin\Debug\net8.0\Pirma paskaita.pdb
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\obj\Debug\net8.0\Pirma paskaita.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\obj\Debug\net8.0\Pirma paskaita.AssemblyInfoInputs.cache
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\obj\Debug\net8.0\Pirma paskaita.AssemblyInfo.cs
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\obj\Debug\net8.0\Pirma paskaita.csproj.CoreCompileInputs.cache
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\obj\Debug\net8.0\Pirma paskaita.dll
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\obj\Debug\net8.0\refint\Pirma paskaita.dll
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\obj\Debug\net8.0\Pirma paskaita.pdb
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\obj\Debug\net8.0\Pirma paskaita.genruntimeconfig.cache
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Pirma paskaita\obj\Debug\net8.0\ref\Pirma paskaita.dll
