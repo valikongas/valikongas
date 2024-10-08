@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Antra  paskaita")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7960bef849e7e50ab21a183acc82cd756b26496f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cd7a6a53f3d1d98700c75b0de306f7a80d6959e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Antra  paskaita")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Antra  paskaita")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

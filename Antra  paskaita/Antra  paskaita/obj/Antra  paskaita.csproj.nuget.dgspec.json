@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gedasvalikonis\\Desktop\\programavimo mokslai\\Pirma paskaita\\Antra  paskaita\\Antra  paskaita\\Antra  paskaita.csproj": {}
+    "C:\\Users\\gedasvalikonis\\Documents\\GitHub\\valikongas\\Antra  paskaita\\Antra  paskaita\\Antra  paskaita.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gedasvalikonis\\Desktop\\programavimo mokslai\\Pirma paskaita\\Antra  paskaita\\Antra  paskaita\\Antra  paskaita.csproj": {
+    "C:\\Users\\gedasvalikonis\\Documents\\GitHub\\valikongas\\Antra  paskaita\\Antra  paskaita\\Antra  paskaita.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gedasvalikonis\\Desktop\\programavimo mokslai\\Pirma paskaita\\Antra  paskaita\\Antra  paskaita\\Antra  paskaita.csproj",
+        "projectUniqueName": "C:\\Users\\gedasvalikonis\\Documents\\GitHub\\valikongas\\Antra  paskaita\\Antra  paskaita\\Antra  paskaita.csproj",
         "projectName": "Antra  paskaita",
-        "projectPath": "C:\\Users\\gedasvalikonis\\Desktop\\programavimo mokslai\\Pirma paskaita\\Antra  paskaita\\Antra  paskaita\\Antra  paskaita.csproj",
+        "projectPath": "C:\\Users\\gedasvalikonis\\Documents\\GitHub\\valikongas\\Antra  paskaita\\Antra  paskaita\\Antra  paskaita.csproj",
         "packagesPath": "C:\\Users\\gedasvalikonis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gedasvalikonis\\Desktop\\programavimo mokslai\\Pirma paskaita\\Antra  paskaita\\Antra  paskaita\\obj\\",
+        "outputPath": "C:\\Users\\gedasvalikonis\\Documents\\GitHub\\valikongas\\Antra  paskaita\\Antra  paskaita\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
