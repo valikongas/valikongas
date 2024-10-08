@@ -1,0 +1,15 @@
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\bin\Debug\net8.0\Antra  paskaita.exe
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\bin\Debug\net8.0\Antra  paskaita.deps.json
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\bin\Debug\net8.0\Antra  paskaita.runtimeconfig.json
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\bin\Debug\net8.0\Antra  paskaita.dll
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\bin\Debug\net8.0\Antra  paskaita.pdb
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\obj\Debug\net8.0\Antra  paskaita.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\obj\Debug\net8.0\Antra  paskaita.AssemblyInfoInputs.cache
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\obj\Debug\net8.0\Antra  paskaita.AssemblyInfo.cs
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\obj\Debug\net8.0\Antra  paskaita.csproj.CoreCompileInputs.cache
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\obj\Debug\net8.0\Antra  paskaita.sourcelink.json
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\obj\Debug\net8.0\Antra  paskaita.dll
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\obj\Debug\net8.0\refint\Antra  paskaita.dll
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\obj\Debug\net8.0\Antra  paskaita.pdb
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\obj\Debug\net8.0\Antra  paskaita.genruntimeconfig.cache
+C:\Users\gedasvalikonis\Desktop\programavimo mokslai\Pirma paskaita\Antra  paskaita\Antra  paskaita\obj\Debug\net8.0\ref\Antra  paskaita.dll
