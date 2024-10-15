@@ -116,39 +116,39 @@
 
 
 
-////Nr.6 Uzduotis
-//Console.Write("Ivesk pirma varda: ");
-//string vardas1 = Console.ReadLine();
-//Console.Write("Ivesk pirma varda: ");
-//string vardas2 = Console.ReadLine();
-//int sum1 = 0;
-//int sum2 = 0;
-//int suma = 0;
+//Nr.6 Uzduotis
+Console.Write("Ivesk pirma varda: ");
+string vardas1 = Console.ReadLine();
+Console.Write("Ivesk antras varda: ");
+string vardas2 = Console.ReadLine();
+int sum1 = 0;
+int sum2 = 0;
+int suma = 0;
 
-//for (int i = 0; i < vardas1.Length - 1; i++)
-//{
-//    sum1 = sum1 + "tikroji meile".Count(x => x == vardas1[i]);
+for (int i = 0; i < vardas1.Length - 1; i++)
+{
+    sum1 = sum1 + "tikroji meile".Count(x => x == vardas1[i]);
 
-//}
+}
 
-//for (int i = 0; i < vardas2.Length - 1; i++)
-//{
-//    sum2 = sum2 + "tikroji meile".Count(x => x == vardas2[i]);
+for (int i = 0; i < vardas2.Length - 1; i++)
+{
+    sum2 = sum2 + "tikroji meile".Count(x => x == vardas2[i]);
 
-//}
+}
 
-//suma = Convert.ToInt32((Convert.ToString(sum1) + Convert.ToString(sum2)));
+suma = Convert.ToInt32((Convert.ToString(sum1) + Convert.ToString(sum2)));
 
-//switch (suma)
-//{
-//    case (< 30 or > 90):
-//        Console.WriteLine("vienas kitam puikiai tinka");
-//        break;
-//    case (>= 30 and <= 50):
+switch (suma)
+{
+    case (< 30 or > 90):
+        Console.WriteLine("vienas kitam puikiai tinka");
+        break;
+    case (>= 30 and <= 50):
 
-//        Console.WriteLine("Vienas kitam tinka vidutiniskai");
-//        break;
-//    default:
-//        Console.WriteLine("Vienas kitam netinka");
-//        break;
-//}
+        Console.WriteLine("Vienas kitam tinka vidutiniskai");
+        break;
+    default:
+        Console.WriteLine("Vienas kitam netinka");
+        break;
+}
