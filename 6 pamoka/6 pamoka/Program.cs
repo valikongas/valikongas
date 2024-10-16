@@ -93,7 +93,7 @@ int ciklas = 0;
 Random skaicius = new Random();
 int atsitiktinis = skaicius.Next(1, 100);
 bool atspejai = false;
-Console.Write("Spek skaiciu nuo 1 iki 100: ");
+Console.Write("Sugalvojau skaiciu, nuo 1 iki 100. Atspek.Spek skaiciu: ");
 do
 {
     ciklas++;
