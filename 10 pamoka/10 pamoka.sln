@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 pamoka", "10 pamoka\10 pamoka.csproj", "{4D866C83-74AF-498E-B04B-E802365B787D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D866C83-74AF-498E-B04B-E802365B787D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D866C83-74AF-498E-B04B-E802365B787D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D866C83-74AF-498E-B04B-E802365B787D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D866C83-74AF-498E-B04B-E802365B787D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92F27A31-EF38-49EB-9A86-4A2893CC7B45}
+	EndGlobalSection
+EndGlobal
