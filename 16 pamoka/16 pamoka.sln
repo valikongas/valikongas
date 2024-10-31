@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16 pamoka", "16 pamoka\16 pamoka.csproj", "{40FFDEBF-ECB4-4C81-9985-7E87941413F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projektas", "projektas\projektas.csproj", "{728FB3C4-B1C5-467D-9CC2-A4C994D20379}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40FFDEBF-ECB4-4C81-9985-7E87941413F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40FFDEBF-ECB4-4C81-9985-7E87941413F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40FFDEBF-ECB4-4C81-9985-7E87941413F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40FFDEBF-ECB4-4C81-9985-7E87941413F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{728FB3C4-B1C5-467D-9CC2-A4C994D20379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{728FB3C4-B1C5-467D-9CC2-A4C994D20379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{728FB3C4-B1C5-467D-9CC2-A4C994D20379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{728FB3C4-B1C5-467D-9CC2-A4C994D20379}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EDBF5D5-0C11-4EF8-A30F-E654AF5469BA}
+	EndGlobalSection
+EndGlobal
