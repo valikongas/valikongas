@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -163,7 +164,53 @@ namespace _2_lygis_egzaminas
             Order order = Table.Tables[tableNumber - 1].TableOrder;
             order.OrderCompleted=DateTime.Now;
 
-            //cekiu atspaudinism
+            ReceiptClient receiptClient = new ReceiptClient(Restorant.restoranas1, order.OrderedDishes, order.OrderedDrinks, order.Sum, order.OrderCompleted);
+            ReceiptRestorant receiptRestorant = new ReceiptRestorant(Restorant.restoranas1, order.OrderedDishes, order.OrderedDrinks, order.Sum, order.OrderCompleted, order.OrderReceived, order.WaiterName, tableNumber);
+
+            Console.WriteLine();
+            Console.WriteLine("Ar klientui reikalingas cekis Y/N");
+            char key;
+            bool isYOrN=false;
+            do
+            {
+                key = Console.ReadKey().KeyChar;
+                if (key =='y' || key=='N')
+                {
+                    isYOrN = true;
+                }
+            }
+            while (!isYOrN);
+
+            if(key=='y')
+            {
+                Console.Clear();
+                Console.WriteLine($"{receiptClient.Restorant.Name}");
+                Console.WriteLine($"Im. k. {receiptClient.Restorant.Code}");
+                Console.WriteLine($"PVM moketojo kodas {receiptClient.Restorant.VATCode}");
+                Console.WriteLine($"{receiptClient.Restorant.Adress}");
+                Console.WriteLine();
+                Console.WriteLine($"Data: {receiptClient.OrderCompleted}");
+                Console.WriteLine();
+                Console.WriteLine( "            Kvitas");
+                Console.WriteLine();
+                foreach(var item in receiptClient.Dishes)
+                {
+                    Console.WriteLine($"   {item.Name}\t\t{item.Price}");
+                }
+                foreach(var item in receiptClient.Drinks)
+                {
+                    Console.WriteLine($"   {item.Name}\t{item.Price}");
+                }
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine($"                 Suma:  {receiptClient.Sum}");
+            }
+
+            List<ReceiptRestorant> receiptRestorants = DataOperation.DataLoad<ReceiptRestorant>(ReceiptRestorant.Path);
+            receiptRestorants.Add( receiptRestorant );
+            DataOperation.DataSave<ReceiptRestorant>(receiptRestorants, ReceiptRestorant.Path);
+
+           
+
             //cekiu siuntimas mailu
 
 

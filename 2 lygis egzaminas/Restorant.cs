@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2_lygis_egzaminas
 {
-    internal class Restorant
+    public class Restorant
     {
         public static Restorant restoranas1 { get; private set; } = new Restorant();
         public string Name { get; set; }

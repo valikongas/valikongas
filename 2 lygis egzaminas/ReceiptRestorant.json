@@ -1,0 +1,39 @@
+[
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2024-12-21T22:25:17.5051712+02:00",
+    "TableNumber": 3,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Falafeliai",
+        "Price": 4.9
+      }
+    ],
+    "Drinks": [
+      {
+        "Name": "Vaisiu sultys",
+        "Price": 1.8
+      },
+      {
+        "Name": "Juoda kava  ",
+        "Price": 2.0
+      },
+      {
+        "Name": "Airiska kava",
+        "Price": 3.5
+      },
+      {
+        "Name": "Raudonas vynas",
+        "Price": 6.5
+      }
+    ],
+    "Sum": 18.7,
+    "OrderCompleted": "2024-12-21T22:25:35.8290843+02:00"
+  }
+]
