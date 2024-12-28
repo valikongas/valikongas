@@ -1,8 +1,164 @@
 [
   {
     "WaiterName": "Gedas",
-    "OrderStart": "2024-12-21T22:25:17.5051712+02:00",
-    "TableNumber": 3,
+    "OrderStart": "2024-12-22T22:13:54.6396678+02:00",
+    "TableNumber": 1,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Cepelinai",
+        "Price": 4.40
+      }
+    ],
+    "Drinks": [
+      {
+        "Name": "Juoda kava  ",
+        "Price": 2.0
+      }
+    ],
+    "Sum": 6.40,
+    "OrderCompleted": "2024-12-22T22:14:16.9939287+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2024-12-22T22:18:57.9105359+02:00",
+    "TableNumber": 1,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Falafeliai",
+        "Price": 4.9
+      },
+      {
+        "Name": "Khinkali",
+        "Price": 7.5
+      }
+    ],
+    "Drinks": [
+      {
+        "Name": "Vaisiu sultys",
+        "Price": 1.8
+      }
+    ],
+    "Sum": 14.2,
+    "OrderCompleted": "2024-12-22T22:19:11.2112482+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2024-12-23T20:16:12.5329455+02:00",
+    "TableNumber": 1,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Falafeliai",
+        "Price": 4.9
+      },
+      {
+        "Name": "Khinkali",
+        "Price": 7.5
+      }
+    ],
+    "Drinks": [
+      {
+        "Name": "Raudonas vynas",
+        "Price": 6.5
+      },
+      {
+        "Name": "Vaisiu sultys",
+        "Price": 1.8
+      }
+    ],
+    "Sum": 20.7,
+    "OrderCompleted": "2024-12-23T20:18:27.7955302+02:00"
+  },
+  {
+    "WaiterName": "Vaida",
+    "OrderStart": "2024-12-23T20:31:32.5956833+02:00",
+    "TableNumber": 4,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Cepelinai",
+        "Price": 4.40
+      },
+      {
+        "Name": "Cepelinai",
+        "Price": 4.40
+      }
+    ],
+    "Drinks": [
+      {
+        "Name": "Raudonas vynas",
+        "Price": 6.5
+      }
+    ],
+    "Sum": 15.30,
+    "OrderCompleted": "2024-12-23T20:32:30.1226603+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2024-12-23T20:54:14.8945368+02:00",
+    "TableNumber": 1,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Falafeliai",
+        "Price": 4.9
+      }
+    ],
+    "Drinks": [],
+    "Sum": 4.9,
+    "OrderCompleted": "2024-12-23T20:54:21.7587065+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2024-12-23T21:01:15.4463428+02:00",
+    "TableNumber": 1,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Falafeliai",
+        "Price": 4.9
+      }
+    ],
+    "Drinks": [],
+    "Sum": 4.9,
+    "OrderCompleted": "2024-12-23T21:01:25.997914+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2024-12-23T21:26:24.2976994+02:00",
+    "TableNumber": 1,
     "Restorant": {
       "Name": "Geriausias restoranas",
       "Code": "123123123",
@@ -19,21 +175,94 @@
       {
         "Name": "Vaisiu sultys",
         "Price": 1.8
-      },
-      {
-        "Name": "Juoda kava  ",
-        "Price": 2.0
-      },
-      {
-        "Name": "Airiska kava",
-        "Price": 3.5
-      },
-      {
-        "Name": "Raudonas vynas",
-        "Price": 6.5
       }
     ],
-    "Sum": 18.7,
-    "OrderCompleted": "2024-12-21T22:25:35.8290843+02:00"
+    "Sum": 6.7,
+    "OrderCompleted": "2024-12-23T21:26:31.9126202+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2024-12-28T16:39:58.9226029+02:00",
+    "TableNumber": 1,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Khinkali",
+        "Price": 7.5
+      },
+      {
+        "Name": "Khinkali",
+        "Price": 7.5
+      }
+    ],
+    "Drinks": [
+      {
+        "Name": "Vaisiu sultys",
+        "Price": 1.8
+      },
+      {
+        "Name": "Vaisiu sultys",
+        "Price": 1.8
+      },
+      {
+        "Name": "Vaisiu sultys",
+        "Price": 1.8
+      }
+    ],
+    "Sum": 20.4,
+    "OrderCompleted": "2024-12-28T16:40:19.6980881+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2024-12-28T16:43:01.1597016+02:00",
+    "TableNumber": 2,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Falafeliai",
+        "Price": 4.9
+      },
+      {
+        "Name": "Khinkali",
+        "Price": 7.5
+      },
+      {
+        "Name": "Balandeliai",
+        "Price": 7.8
+      }
+    ],
+    "Drinks": [],
+    "Sum": 20.2,
+    "OrderCompleted": "2024-12-28T16:43:10.8281584+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2024-12-28T17:14:19.0378297+02:00",
+    "TableNumber": 1,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Falafeliai",
+        "Price": 4.9
+      }
+    ],
+    "Drinks": [],
+    "Sum": 4.9,
+    "OrderCompleted": "2024-12-28T17:14:27.2205573+02:00"
   }
 ]

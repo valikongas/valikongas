@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace _2_lygis_egzaminas
 {
     public class MenuItem
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = "";
         public decimal Price { get; set; }
 
         public MenuItem()
@@ -67,13 +68,14 @@ namespace _2_lygis_egzaminas
             string name = "";
             while (true)
             {
-                name = Console.ReadLine();
+                name = Console.ReadLine()  ?? "";
                 if (string.IsNullOrEmpty(name) || string.IsNullOrWhiteSpace(name))
                     Console.WriteLine("Neivedei pavadinimo! Ivesk is naujo");
                 else
                     break;
             }
-            name = name[0].ToString().ToUpper() + name.Substring(1);
+
+            name = FirstBigChar(name);
 
             bool isDecimal = false;
             price = 0;
@@ -89,7 +91,12 @@ namespace _2_lygis_egzaminas
             return name;
         }
 
+        public static string FirstBigChar(string text)
+        {
+            text= text[0].ToString().ToUpper() + text.Substring(1);
 
+            return text;
+        }
 
     }
 }

@@ -10,5 +10,13 @@
   {
     "Name": "Balandeliai",
     "Price": 7.8
+  },
+  {
+    "Name": "Cepelinai",
+    "Price": 4.40
+  },
+  {
+    "Name": "Makaronai",
+    "Price": 3.8
   }
 ]

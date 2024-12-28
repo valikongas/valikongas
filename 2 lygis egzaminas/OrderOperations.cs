@@ -23,7 +23,7 @@ namespace _2_lygis_egzaminas
             order.Sum = sum;
         }
 
-        
+
         public static void NewOrder(string waiterName)
         {
             bool isAllTableOccupied = true;
@@ -38,6 +38,8 @@ namespace _2_lygis_egzaminas
             if (isAllTableOccupied)
             {
                 Console.WriteLine("Visi staliukai uzimti. Klientu nera kur pasodinti.");
+                Console.WriteLine("Spauskite bet koki mygtuka ir grizkite i meniu");
+                Console.ReadKey();
             }
             else
             {
@@ -45,26 +47,26 @@ namespace _2_lygis_egzaminas
                 Console.WriteLine();
                 Console.Write("Pasirinkite prie kurio staliuko sodinsite zmones: ");
                 int tableNumber = 0;
-                while (!(int.TryParse(Console.ReadLine(), out tableNumber) && tableNumber > 0 && tableNumber < 11 && !Table.Tables[tableNumber-1].IsOccupied));
+                while (!(int.TryParse(Console.ReadLine(), out tableNumber) && tableNumber > 0 && tableNumber < 11 && !Table.Tables[tableNumber - 1].IsOccupied)) ;
 
                 Order order = new Order();
-                order.WaiterName= waiterName;
-                order.OrderReceived=DateTime.Now;
-                
+                order.WaiterName = waiterName;
+                order.OrderReceived = DateTime.Now;
 
-                
+
+
                 DataOperation.ListView<Dishes>(Dishes.Path, "patiekalu", true);
                 Console.WriteLine();
                 bool isEndOrder = false;
                 int numberDishes = 0;
                 List<Dishes> dishes = DataOperation.DataLoad<Dishes>(Dishes.Path);
-                while(!isEndOrder)
+                while (!isEndOrder)
                 {
                     Console.WriteLine("Pasirinkite uzsakomo patiekalo numeri,  jei uzsakymas baigtas spausk '0'");
-                    while (!(int.TryParse(Console.ReadLine(), out numberDishes) && numberDishes >= 0 && numberDishes <= dishes.Count));
+                    while (!(int.TryParse(Console.ReadLine(), out numberDishes) && numberDishes >= 0 && numberDishes <= dishes.Count)) ;
                     if (numberDishes == 0)
                     {
-                        isEndOrder=true;
+                        isEndOrder = true;
                     }
                     else
                     {
@@ -72,7 +74,7 @@ namespace _2_lygis_egzaminas
                     }
 
                 }
-                
+
                 DataOperation.ListView<Drink>(Drink.Path, "gerimu", true);
                 Console.WriteLine();
                 isEndOrder = false;
@@ -92,8 +94,8 @@ namespace _2_lygis_egzaminas
                     }
                 }
                 OrderSum(order);
-                    Table.Tables[tableNumber-1].TableOrder= order;
-                    Table.Tables[tableNumber-1].IsOccupied= true;
+                Table.Tables[tableNumber - 1].TableOrder = order;
+                Table.Tables[tableNumber - 1].IsOccupied = true;
             }
 
 
@@ -108,7 +110,7 @@ namespace _2_lygis_egzaminas
             int tableNumber = 0;
             while (!(int.TryParse(Console.ReadLine(), out tableNumber) && tableNumber > 0 && tableNumber < 11 && Table.Tables[tableNumber - 1].IsOccupied)) ;
 
-            Order order = Table.Tables[tableNumber-1].TableOrder;
+            Order order = Table.Tables[tableNumber - 1].TableOrder;
 
             DataOperation.ListView<Dishes>(Dishes.Path, "patiekalu", true);
             Console.WriteLine();
@@ -150,11 +152,32 @@ namespace _2_lygis_egzaminas
             }
             OrderSum(order);
             Table.Tables[tableNumber - 1].TableOrder = order;
-  
+
         }
 
-        internal static void OrderEnd(string waiterName)
+        public static void OrderEnd(string waiterName)
         {
+            bool isNoOneTableOccupied = true;
+            for (int i = 0; i < 10; i++)
+            {
+                if (Table.Tables[i].IsOccupied)
+                {
+                    isNoOneTableOccupied = false;
+                    break;
+                }
+            }
+
+
+            if (isNoOneTableOccupied)
+            {
+                Console.Clear();
+                Console.WriteLine("Nera priimtu uzsakymu, kuriuos galime baigti.");
+                Console.WriteLine("Spauskite bet koki mygtuka ir grizkite i meniu");
+                Console.ReadKey();
+                return;
+            }
+           
+
             TableOperation.TableView(false, true);
             Console.WriteLine();
             Console.Write("Pasirinkite kuris staliukas nori atsiskaityti: ");
@@ -162,7 +185,7 @@ namespace _2_lygis_egzaminas
             while (!(int.TryParse(Console.ReadLine(), out tableNumber) && tableNumber > 0 && tableNumber < 11 && Table.Tables[tableNumber - 1].IsOccupied)) ;
 
             Order order = Table.Tables[tableNumber - 1].TableOrder;
-            order.OrderCompleted=DateTime.Now;
+            order.OrderCompleted = DateTime.Now;
 
             ReceiptClient receiptClient = new ReceiptClient(Restorant.restoranas1, order.OrderedDishes, order.OrderedDrinks, order.Sum, order.OrderCompleted);
             ReceiptRestorant receiptRestorant = new ReceiptRestorant(Restorant.restoranas1, order.OrderedDishes, order.OrderedDrinks, order.Sum, order.OrderCompleted, order.OrderReceived, order.WaiterName, tableNumber);
@@ -170,61 +193,54 @@ namespace _2_lygis_egzaminas
             Console.WriteLine();
             Console.WriteLine("Ar klientui reikalingas cekis Y/N");
             char key;
-            bool isYOrN=false;
+            bool isYOrN = false;
             do
             {
-                key = Console.ReadKey().KeyChar;
-                if (key =='y' || key=='N')
+                key = Convert.ToChar(Console.ReadKey().KeyChar.ToString().ToLower());
+                if (key == 'y' || key == 'n')
                 {
                     isYOrN = true;
                 }
             }
             while (!isYOrN);
 
-            if(key=='y')
+            if (key == 'y')
             {
                 Console.Clear();
-                Console.WriteLine($"{receiptClient.Restorant.Name}");
-                Console.WriteLine($"Im. k. {receiptClient.Restorant.Code}");
-                Console.WriteLine($"PVM moketojo kodas {receiptClient.Restorant.VATCode}");
-                Console.WriteLine($"{receiptClient.Restorant.Adress}");
-                Console.WriteLine();
-                Console.WriteLine($"Data: {receiptClient.OrderCompleted}");
-                Console.WriteLine();
-                Console.WriteLine( "            Kvitas");
-                Console.WriteLine();
-                foreach(var item in receiptClient.Dishes)
-                {
-                    Console.WriteLine($"   {item.Name}\t\t{item.Price}");
-                }
-                foreach(var item in receiptClient.Drinks)
-                {
-                    Console.WriteLine($"   {item.Name}\t{item.Price}");
-                }
-                Console.WriteLine("----------------------------------------");
-                Console.WriteLine($"                 Suma:  {receiptClient.Sum}");
+                Console.WriteLine(ReceiptClient.ClientReceiptText(receiptClient));
             }
 
             List<ReceiptRestorant> receiptRestorants = DataOperation.DataLoad<ReceiptRestorant>(ReceiptRestorant.Path);
-            receiptRestorants.Add( receiptRestorant );
+            receiptRestorants.Add(receiptRestorant);
             DataOperation.DataSave<ReceiptRestorant>(receiptRestorants, ReceiptRestorant.Path);
+            Console.WriteLine();
+            Console.WriteLine(ReceiptRestorant.RestorantReceiptText(receiptRestorant));
 
-           
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Ar klientui siusti ceki mailu ? (Y/N)");
+            isYOrN = false;
+            do
+            {
+                key = Convert.ToChar(Console.ReadKey().KeyChar.ToString().ToLower());
+                if (key == 'y' || key == 'n')
+                {
+                    isYOrN = true;
+                }
+            }
+            while (!isYOrN);
 
-            //cekiu siuntimas mailu
-
-
-
-
-
-
-
+            if (key == 'y')
+            {
+                MailSend.MailSender(ReceiptClient.ClientReceiptText(receiptClient));
+            }
 
             Table.Tables[tableNumber - 1].TableOrder = new Order();
-            Table.Tables[tableNumber - 1].IsOccupied=false;
+            Table.Tables[tableNumber - 1].IsOccupied = false;
+
 
         }
     }
 
-    
+
 }

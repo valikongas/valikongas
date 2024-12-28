@@ -16,7 +16,7 @@ namespace _2_lygis_egzaminas
         public string Path = @"C:\Users\gedasvalikonis\Documents\GitHub\valikongas\2 lygis egzaminas\waiter.json";
         public string Name { get; set; } = "";
 
-        public string Password { get; set; }
+        public string Password { get; set; } = "";
 
         public Waiter()
         {
@@ -65,7 +65,7 @@ namespace _2_lygis_egzaminas
             string name = "";
             while (true)
             {
-                name = Console.ReadLine();
+                name = Console.ReadLine() ?? "";
                 if (string.IsNullOrEmpty(name) || string.IsNullOrWhiteSpace(name))
                     Console.WriteLine("Neivedei vardo! Ivesk is naujo");
                 else
@@ -76,7 +76,7 @@ namespace _2_lygis_egzaminas
             while (true)
             {
                 Console.Write("Iveskite slaptazodi: ");
-                password = Console.ReadLine();
+                password = Console.ReadLine() ?? "";
                 if (string.IsNullOrEmpty(password) || string.IsNullOrWhiteSpace(password))
                     Console.WriteLine("Neivedei slaptazodzio! Ivesk is naujo");
                 else

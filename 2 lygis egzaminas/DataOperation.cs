@@ -19,6 +19,10 @@ namespace _2_lygis_egzaminas
         {
             string json = File.ReadAllText(path);
             var list = JsonSerializer.Deserialize<List<T>>(json);
+            if (list == null)
+            {
+                list = new List<T>();
+            }
             return list;
         }
 
@@ -34,6 +38,9 @@ namespace _2_lygis_egzaminas
             int index = 1;
             foreach (var element in list)
             {
+                if(element==null)
+                    continue;
+
                 var prop=element.GetType().GetProperties();
                 Console.WriteLine($"{index}\t{prop[0].GetValue(element)}\t\t {prop[1].Name.ToLower()} {prop[1].GetValue(element)}");
                 index++;

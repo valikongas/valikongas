@@ -13,7 +13,7 @@ namespace _2_lygis_egzaminas
         public int  Place { get; set; }
         public bool IsOccupied {  get; set; }
 
-        public Order TableOrder { get; set; }
+        public Order TableOrder { get; set; }=new Order();
 
         public Table()
         {

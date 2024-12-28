@@ -13,17 +13,18 @@ namespace _2_lygis_egzaminas
         {
             
             Waiter waiter1 = new Waiter();
-            waiter1=waiter1.WaiterLogin();
+            waiter1=waiter1.WaiterLogin() ;
             if (waiter1 == null)
             {
                 RestaurantProgramStartMenu.StartProgram();
-                
+                return;
             }
 
             while (true)
             {
                 Console.Clear();
 
+                
          //      var name = waiter1.Name ?? string.Empty; 
          //     var name = waiter1.Name == null ? string.Empty : waiter1.Name; 
                 Console.WriteLine($"        MENIU          padavejas: {waiter1.Name}");

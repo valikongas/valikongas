@@ -5,49 +5,51 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Mail;
 using System.Net;
+using System.Text.RegularExpressions;
 
 namespace _2_lygis_egzaminas
 {
     public class MailSend
     {
 
-        public static void MailSender()
+        public static void MailSender(string text)
         {
-            string smtpAddress = "smtp.gmail.com";
-            int portNumber = 587; // Paprastai 587 arba 465
-            bool enableSSL = true;
-
-            // Siuntėjo informacija
-            string emailFrom = "your-email@gmail.com";
-            string password = "your-email-password"; // Slaptažodis arba programėlės slaptažodis
-
-            // Gavėjo informacija
-            string emailTo = "recipient-email@example.com";
-            string subject = "Test Email";
-            string body = "This is a test email sent from a C# application.";
-
-            try
             {
-                using (MailMessage mail = new MailMessage())
-                {
-                    mail.From = new MailAddress(emailFrom);
-                    mail.To.Add(emailTo);
-                    mail.Subject = subject;
-                    mail.Body = body;
-                    mail.IsBodyHtml = false; // Jei laiškas HTML formatu, nustatykite į true
 
-                    using (SmtpClient smtp = new SmtpClient(smtpAddress, portNumber))
+                    var smtpClient = new SmtpClient("smtp.office365.com")
                     {
-                        smtp.Credentials = new NetworkCredential(emailFrom, password);
-                        smtp.EnableSsl = enableSSL;
-                        smtp.Send(mail);
-                        Console.WriteLine("Email sent successfully.");
-                    }
+                        Port = 587,
+                        Credentials = new NetworkCredential("gedas.valikonis@codeacademylt.onmicrosoft.com", "Aa91955483."),
+                        EnableSsl = true,
+                    };
+                Console.Clear();
+                Console.Write("Kokiu email'u siusti: ");
+                string? mail = "";
+                bool isGoodMail=false;
+                do
+                {
+                    mail = Console.ReadLine();
+                    mail ??= "";
+                    isGoodMail = IsEmail(mail);
+                    if(!isGoodMail)
+                        Console.WriteLine("Neteisigai ivedete emaila. Bandykite is naujo.");
                 }
+                while (!IsEmail(mail));
+
+                smtpClient.Send("gedas.valikonis@codeacademylt.onmicrosoft.com", mail, $"{Restorant.restoranas1.Name} kvitas", $"{text}");
+                Console.WriteLine("Laiškas išsiųstas!");
+                Console.WriteLine("Spausk bet koki mygtuka ir tesk darba.");
+                Console.ReadKey();
+
             }
-            catch (Exception ex)
+
+            static bool IsEmail(string text)
             {
-                Console.WriteLine($"Error sending email: {ex.Message}");
+                if (string.IsNullOrWhiteSpace(text)) return false;
+
+                // Reguliarioji išraiška el. pašto adresui
+                string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+                return Regex.IsMatch(text, pattern);
             }
 
         }
