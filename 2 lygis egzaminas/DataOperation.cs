@@ -12,12 +12,38 @@ namespace _2_lygis_egzaminas
         public static void DataSave<T>(List<T> list, string path)
         {
             string json = JsonSerializer.Serialize(list, new JsonSerializerOptions { WriteIndented = true });
+            
+
+            if (typeof(T) == typeof(Waiter))
+            {
+                string key = "Gedas123..A9-";
+                string waiterEncrypt=Password.Encrypt(json, key);
+                File.WriteAllText(path, waiterEncrypt);   
+            }
+            else
+            {
             File.WriteAllText(path, json);
+            }
+
         }
 
         public static List<T> DataLoad<T>(string path)
         {
-            string json = File.ReadAllText(path);
+            string json = "";
+            if (typeof(T) == typeof(Waiter))
+            {
+               
+                string key = "Gedas123..A9-";
+                string waiterEncrypt=File.ReadAllText(path);
+                json = Password.Decrypt(waiterEncrypt, key);
+            }
+            else
+            {
+            json = File.ReadAllText(path);
+            }
+
+
+
             var list = JsonSerializer.Deserialize<List<T>>(json);
             if (list == null)
             {
@@ -25,6 +51,8 @@ namespace _2_lygis_egzaminas
             }
             return list;
         }
+
+
 
         public static void ListView<T>(string path, string name, bool isOrder=false)
         {
@@ -52,6 +80,8 @@ namespace _2_lygis_egzaminas
                 Console.ReadKey();
             }
         }
+
+ 
 
     }
 }

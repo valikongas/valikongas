@@ -103,6 +103,27 @@ namespace _2_lygis_egzaminas
 
         public static void AddOrder(string waiterName)
         {
+            bool isNoOneTableOccupied = true;
+            for (int i = 0; i <Table.Tables.Length; i++)
+            {
+                if (Table.Tables[i].IsOccupied)
+                {
+                    isNoOneTableOccupied = false;
+                    break;
+                }
+            }
+
+
+            if (isNoOneTableOccupied)
+            {
+                Console.Clear();
+                Console.WriteLine("Nera priimtu uzsakymu, kuriuos galime papildyti.");
+                Console.WriteLine("Spauskite bet koki mygtuka ir grizkite i meniu");
+                Console.ReadKey();
+                return;
+            }
+
+
 
             TableOperation.TableView(false, true);
             Console.WriteLine();

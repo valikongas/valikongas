@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace _2_lygis_egzaminas
 {
-    public class MenuItem
+    public abstract class MenuItem
     {
         public string Name { get; set; } = "";
         public decimal Price { get; set; }

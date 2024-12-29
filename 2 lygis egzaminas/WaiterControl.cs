@@ -58,6 +58,8 @@ namespace _2_lygis_egzaminas
             Console.WriteLine("");
             Console.WriteLine("Spausk bet koki mygtuka");
             Console.ReadKey();
+
+           
         }
 
         public static void WaiterRemove(Waiter waiterx)

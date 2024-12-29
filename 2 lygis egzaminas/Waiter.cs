@@ -13,7 +13,7 @@ namespace _2_lygis_egzaminas
     public class Waiter
     {
 
-        public string Path = @"C:\Users\gedasvalikonis\Documents\GitHub\valikongas\2 lygis egzaminas\waiter.json";
+        public string Path = @"C:\Users\gedasvalikonis\Documents\GitHub\valikongas\2 lygis egzaminas\padavejai.txt";
         public string Name { get; set; } = "";
 
         public string Password { get; set; } = "";
