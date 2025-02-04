@@ -9,8 +9,10 @@ namespace _2_lygis_egzaminas
 {
     public abstract class MenuItem
     {
+       public int ID {  get; set; }
         public string Name { get; set; } = "";
         public decimal Price { get; set; }
+
 
         public MenuItem()
         {
@@ -25,6 +27,12 @@ namespace _2_lygis_egzaminas
             item.Name = name;
             item.Price = price;
             items.Add(item);
+            using var dbContext = new DarbasSuBaze ();
+            dbContext.Add(item);
+            dbContext.SaveChanges();
+
+
+
             DataOperation.DataSave<T>(items, path);
             Console.WriteLine("");
             Console.WriteLine($"{item.Name} pridetas");

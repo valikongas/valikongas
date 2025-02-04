@@ -378,5 +378,150 @@
     "Drinks": [],
     "Sum": 19.9,
     "OrderCompleted": "2024-12-29T15:48:10.8691407+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2024-12-30T18:50:18.004089+02:00",
+    "TableNumber": 9,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Falafeliai",
+        "Price": 4.9
+      },
+      {
+        "Name": "Cepelinai",
+        "Price": 4.40
+      },
+      {
+        "Name": "Koldunai",
+        "Price": 3.5
+      }
+    ],
+    "Drinks": [
+      {
+        "Name": "Vaisiu sultys",
+        "Price": 1.8
+      },
+      {
+        "Name": "Airiska kava",
+        "Price": 3.5
+      }
+    ],
+    "Sum": 18.10,
+    "OrderCompleted": "2024-12-30T18:51:37.0007246+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2024-12-30T18:51:11.7128883+02:00",
+    "TableNumber": 1,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Falafeliai",
+        "Price": 4.9
+      }
+    ],
+    "Drinks": [
+      {
+        "Name": "Vaisiu sultys",
+        "Price": 1.8
+      }
+    ],
+    "Sum": 6.7,
+    "OrderCompleted": "2024-12-30T18:52:59.9288626+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2024-12-30T18:53:53.8565817+02:00",
+    "TableNumber": 1,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Falafeliai",
+        "Price": 4.9
+      }
+    ],
+    "Drinks": [
+      {
+        "Name": "Raudonas vynas",
+        "Price": 6.5
+      }
+    ],
+    "Sum": 11.4,
+    "OrderCompleted": "2024-12-30T18:54:02.640892+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2025-01-02T10:40:22.9037272+02:00",
+    "TableNumber": 10,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Koldunai",
+        "Price": 3.5
+      },
+      {
+        "Name": "Sriuba",
+        "Price": 5.1
+      }
+    ],
+    "Drinks": [
+      {
+        "Name": "Airiska kava",
+        "Price": 3.5
+      }
+    ],
+    "Sum": 12.1,
+    "OrderCompleted": "2025-01-02T10:41:12.7367372+02:00"
+  },
+  {
+    "WaiterName": "Gedas",
+    "OrderStart": "2025-01-03T18:36:01.1886011+02:00",
+    "TableNumber": 2,
+    "Restorant": {
+      "Name": "Geriausias restoranas",
+      "Code": "123123123",
+      "VATCode": "LT123123123",
+      "Adress": "Pilies g. 54, Vilnius"
+    },
+    "Dishes": [
+      {
+        "Name": "Balandeliai",
+        "Price": 7.8
+      },
+      {
+        "Name": "Sriuba",
+        "Price": 5.1
+      }
+    ],
+    "Drinks": [
+      {
+        "Name": "Juoda kava  ",
+        "Price": 2.0
+      }
+    ],
+    "Sum": 14.9,
+    "OrderCompleted": "2025-01-03T18:36:41.6358219+02:00"
   }
 ]
