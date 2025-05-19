@@ -1,6 +1,6 @@
 ﻿
 
-using Azure.Core.GeoJson;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace DB_baigiamasis

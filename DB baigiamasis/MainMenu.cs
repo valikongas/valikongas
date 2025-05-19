@@ -1,6 +1,5 @@
 ﻿
 
-using Microsoft.EntityFrameworkCore.Migrations.Operations;
 
 namespace DB_baigiamasis
 {

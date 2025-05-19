@@ -1,0 +1,6 @@
+@API_Nr7_Uzrasine_HostAddress = http://localhost:5189
+
+GET {{API_Nr7_Uzrasine_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
