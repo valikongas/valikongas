@@ -61,7 +61,7 @@ namespace Egzaminas.Controllers
                 return Unauthorized("Invalid username or password.");
             }
             string token = _jwtService.GetJwtToken(request.Username, role);
-            return Ok("Login successful.");
+            return Ok(token);
         }
 
        

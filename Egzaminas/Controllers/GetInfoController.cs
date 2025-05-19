@@ -9,7 +9,7 @@ namespace Egzaminas.Controllers
    
         [Route("api/[controller]")]
         [ApiController]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User, Admin")]
  public class GetInfoController : ControllerBase
     {
 

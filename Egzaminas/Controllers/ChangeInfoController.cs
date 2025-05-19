@@ -14,8 +14,8 @@ namespace Egzaminas.Controllers
     public class ChangeInfoController : ControllerBase
     {
       
-        private readonly ChangeInfoBusinessLogic _changeInfoBusinessLogic;
-        public ChangeInfoController( ChangeInfoBusinessLogic changeInfoBusinessLogic)
+        private readonly IChangeInfoBusinessLogic _changeInfoBusinessLogic;
+        public ChangeInfoController( IChangeInfoBusinessLogic changeInfoBusinessLogic)
         {
             _changeInfoBusinessLogic = changeInfoBusinessLogic;
         }
